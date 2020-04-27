@@ -1,0 +1,25 @@
+body {
+    background-color: whitesmoke;
+    padding: 2em 5em;
+    height: auto;
+}
+.main {
+    padding: 1em 2em;
+    overflow-wrap: break-word;
+    background-color: wheat;
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: auto;
+}
+.disc {
+    width: 50em;
+    word-wrap: break-word;
+}
+@media (max-width: 768px){
+
+
+}

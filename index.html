@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-
+    <div class="container-fluid main">
     
     <h1 id="title"><em> Hello World, we are softwares developers!</em></h1>
+    <div class="disc">
     <p id="description">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
       Aspernatur eaque dolore soluta qui velit nobis consequuntur quasi!
@@ -17,17 +19,37 @@
        eniam minus odio!
 
     </p>
+  </div>
 
-    <form action="" id="survey-form">
-        <label for="name"> name :
-          <input type="text" id="name" required>
+    <form action="" id="survey-form" class="form-group">
+      <div class="input-group">
+        <label for="name" id="name-label"> name :
+          <input type="text" id="name" required placeholder="user name">
         </label><br>
-        <label for="email"> email :
-          <input type="email" name="email" id="email" required>
+      </div>
+        <label for="email" id = "email-label"> email :
+          <input type="email" name="email" id="email" required placeholder="Email">
         </label><br>
-        <label for="number"> number :
-          <input type="number" name="number" id="number">
+        <label for="number" id="number-label"> number :
+          <input type="number" name="number" id="number" min="18" max="64" placeholder="Number">
         </label><br>
+        <select name="country" id="dropdown">
+            <option value="1">Canada</option>
+            <option value="2">South Africa</option>
+            <option value="3">France</option>
+        </select>
+        <br><br>
+        <label for="name">Case type 1</label><input type="radio" name="name" id="" value="1">
+        <br>
+        <label for="name">Case type 2</label> <input type="radio" name="name" id="" value="2">
+        <br>
+        <label for="">Traveler</label><input type="checkbox" name="value" id="" value="100"><br>
+        <label for="">Resident</label> <input type="checkbox" name="value" id="" value="200"><br>
+        <label for="">International</label><input type="checkbox" name="value" id="" value="300"><br>
+        <br>
+        <textarea name="comment" id="comment" cols="40" rows="10" placeholder="Please enter comment"></textarea>
+        <br>
+        <button type="submit" id="submit">submit</button>
     </form>
     <!--
       instructions
@@ -49,6 +71,7 @@
     - The freeCodeCamp Team
 
     -->
+  </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
   </body>
